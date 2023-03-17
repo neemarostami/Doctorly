@@ -22,4 +22,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Doctorly.Domain\Doctorly.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
