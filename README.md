@@ -3,7 +3,7 @@
 Based on the requirements, I firstly started to make initial structure of the project based on Clean Architecture with DDD approach.
 1.	I created Domain project (Domain Model) and created Attendee & Event aggregates with Email as a Value Object. 
 2.	I created the contract IRepository interfaces for domain business needs in the Domain project 
-3.	I also created a Unit Tests project to test functionality of the Email value object and passed the tests successfully. 
+3.	I also created a Unit Tests project with XUnit framework to test functionality of the Email value object and passed the tests successfully. 
 4.	After that I created Application project to cover our business logics using CQRS pattern. I used MediatR NuGet for these purposes as an external library. 
 5.	 I also created an Email service to manage sending emails. But I only created its interface and the implementation can be done using SMTP or other techs in future due to limit time.
 6.	I created Dependency Injection class to register all my services and command handlers which have been implemented using MediatR.
