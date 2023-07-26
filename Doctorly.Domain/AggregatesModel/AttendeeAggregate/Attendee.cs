@@ -4,10 +4,17 @@ namespace Doctorly.Domain.AggregatesModel.AttendeeAggregate
 {
     public class Attendee : EntityBase
     {
-        protected Attendee() { }
+        protected Attendee() 
+        {
+        }
 
         public Attendee(string name, Email email)
         {
+            if (name.Length > 100)
+            {
+                throw new Exception("The name is longer than 100 charachter");
+            }
+
             Name = name;
             Email = email;
         }

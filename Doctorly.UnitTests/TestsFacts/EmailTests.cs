@@ -1,4 +1,4 @@
-﻿using Doctorly.Domain.AggregatesModel.AttendeeAggregate;
+﻿using Doctorly.Domain.Common;
 using Doctorly.Domain.Exceptions;
 using System;
 using System.Collections.Generic;

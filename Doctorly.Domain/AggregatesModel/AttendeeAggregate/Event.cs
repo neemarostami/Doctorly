@@ -40,5 +40,10 @@ namespace Doctorly.Domain.AggregatesModel.AttendeeAggregate
         {
             IsAttended = false;
         }
+
+        public void ChangeEventDate(DateOnly date)
+        {
+            EventDate = date;
+        }
     }
 }

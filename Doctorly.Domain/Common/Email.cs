@@ -1,8 +1,7 @@
-﻿using Doctorly.Domain.Common;
-using Doctorly.Domain.Exceptions;
+﻿using Doctorly.Domain.Exceptions;
 using System.Net.Mail;
 
-namespace Doctorly.Domain.AggregatesModel.AttendeeAggregate
+namespace Doctorly.Domain.Common
 {
     public class Email : ValueObject
     {
